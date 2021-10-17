@@ -23,7 +23,8 @@
 	export default{
 		data(){
 			return { email:"",
-			 password:""
+			 password:"",
+       error:""
 			}
 		},
 		  created () {
@@ -49,7 +50,7 @@
       localStorage.csrf = response.data.csrf
       localStorage.signedIn = true
       this.error = ''
-      this.$router.replace('/records')
+      this.$router.replace('/Advertisement')
     },
     signinFailed (error) {
       this.error = (error.response && error.response.data && error.response.data.error) || ''
@@ -58,7 +59,7 @@
     },
     checkSignedIn () {
       if (localStorage.signedIn) {
-        this.$router.replace('/records')
+        this.$router.replace('/Advertisement')
       }
 
 	}

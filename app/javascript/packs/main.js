@@ -35,6 +35,7 @@ const store = new Vuex.Store({
   }})
 Vue.component('navBar',require('../components/ui/navbar.vue').default);
 Vue.component('register',require('../components/Register.vue').default);
+Vue.component('advertisement',require('../components/Advertisement.vue').default);
 document.addEventListener('DOMContentLoaded', () => {
   const app = new Vue({
     render: h => h(App),

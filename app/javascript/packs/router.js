@@ -2,6 +2,7 @@
 import login from '../components/Login.vue'
 import home from '../components/Home.vue'
 import register from '../components/Register.vue'
+import Advertisement from '../components/Advertisement.vue'
  const routes = [
     {
       path: '/login',
@@ -16,6 +17,15 @@ import register from '../components/Register.vue'
     {
       path: '/register',
       component: register,
+      props: true
+    },
+      {
+      path: '/home',
+      component: home,
+      props: true
+    }, {
+      path: '/Advertisement',
+      component:Advertisement,
       props: true
     }
    ];
